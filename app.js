@@ -41,6 +41,11 @@ app.post("/compose", (req, res) => {
   res.redirect("/");
 });
 
+app.get("/blog/:blogTitle", (req, res) => {
+  console.log(req.params.blogTitle);
+  res.send("Yes, it works.");
+});
+
 
 
 
